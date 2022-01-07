@@ -1,0 +1,22 @@
+/*Aplicando lo aprendido 1*/
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: 2em auto;
+    font: 0.9em/1.2 Arial, Helvetica, sans-serif;
+  }
+  
+  .container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #cfe8dc;
+    border: 2px solid #4fb9e3;
+  }
+  
+  /* trabajo con el docente:*/
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /*fr es una unidad flexible, se definen 3 columnas*/
+    grid-auto-rows: 100px; /* Se define el alto de cada fila a 100px */
+    grid-gap: 20px; /* Se define el espaciado entre cada cuadricula */
+  }

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Aplicando 1-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <title>Recetas de Cocina</title>
+  </head>
+  <body>
+    <!---Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-navbar-red">
+      <div class="container-fluid"><!--conteiner-->
+        <a class="navbar-brand" href="#"><!---Nombre de la empresa o producto-->
+          <img
+            src="https://i.pinimg.com/originals/ac/36/8c/ac368c0507aa19250da9adb978955eb1.png"
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Gastronomía Peruana
+        </a>
+        <!--Boton-->
+        <!--complemento de colapso y otros comportamientos de alternancia de navegación--> <button
+       class="navbar-toggler" 
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"><!---margin abajo y lista-->
+            <li class="nav-item"><!--para utilizar menus desplegables-->
+              <a class="nav-link active" aria-current="page" href="#">Home</a><!--Indicar la pagina actual-->
+            </li>
+            <li class="nav-item"><!--para utilizar menus desplegables-->
+              <a class="nav-link active" href="#">Recetas</a><!--Para indicar la pagina actual-->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container text-center bg-light"><!--conteiner de texto centrado ,(bg) para personalizar y (light)para usar con colores de fondo claros  -->
+      <h1 class="display-3 py-4">Blog de recetas de Comidas Peruanas</h1><!--tamaño de texto  y padding ariba y abajo con cantidad 4-->
+      <p>Recetas típicas y populares de la gastronomía peruana.</p><!---Texto-->
+      <!--CARRUSEL-->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide mx-auto"
+        data-bs-ride="carousel"
+        style="max-width: 300px;"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+        </div>
+        <div class="carousel-inner mb-3">
+          <div class="carousel-item active">
+            <!--link de imagen 1-->
+            <img
+              src="https://comidasperuanas.net/wp-content/uploads/2015/08/Causa-rellena-limena-340x225.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <!--Link de imagen 2-->
+            <img
+              src="https://comidasperuanas.net/wp-content/uploads/2015/08/Ceviche-Peruano-de-Pescado.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <!--link de imagen 3-->
+            <img
+              src="https://comidasperuanas.net/wp-content/uploads/2015/08/Lomo-Saltado-340x225.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <!---link de imagen 4-->
+            <img
+              src="https://comidasperuanas.net/wp-content/uploads/2015/12/Aji-de-gallina-340x225.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm text-center">
+          <!--CARDS-->
+           <!--PRIMER CARDS-->
+          <div class="card mb-3"><!--margin abajo camntidad 3-->
+            <!--primera imagen de cards,(card-img-top)coloca una imagen en la parte superior de la tarjeta-->
+            <img
+              src="https://comidasperuanas.net/wp-content/uploads/2015/08/Causa-rellena-limena-340x225.webp"
+              class="card-img-top"
+              alt="Causa Rellena"
+            />
+            <div class="card-body"><!--sección acolchada dentro de una tarjeta.-->
+              <h5 class="card-title text-danger">Causa Rellena</h5><!--(title)títulos de las cartas y color de texto-->
+              <p class="card-text"><!--agregar texto-->
+                Hablar de la Causa Rellena es hablar de uno de los platos más
+                tradicionales de la cocina peruana. Cuenta la historia que este
+                plato ya se consumía en la época precolombina. En esos tiempos
+                era una masa preparada a base de papa amarilla mezclada con ají
+                amarillo. ¿Te gustaría prepararla? ¡Manos a la obra!
+              </p>
+             <!--boton,color de bootstrap y link donde se encuentra la receta--> <a
+                class="btn btn-danger"
+                href="https://comidasperuanas.net/causa-rellena/"
+                >Ver Receta</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--CIERRE DEL PRIMER CARDS-->
+        <!--SEGUNDO CARDS-->
+        <div class="col-lg-3 col-md-6 col-sm text-center">
+          <div class="card mb-3"><!--margin abajo camntidad 3-->
+            <!--segunda imagen de cards,(card-img-top)coloca una imagen en la parte superior de la tarjeta.-->
+            <img
+              src="https://comidasperuanas.net/wp-content/uploads/2015/08/Ceviche-Peruano-de-Pescado.webp"
+              class="card-img-top"
+              alt="Ceviche de Pescado"
+            />
+            <div class="card-body"><!--sección acolchada dentro de una tarjeta.-->
+              <h5 class="card-title text-danger">Ceviche de Pescado</h5><!--(title)títulos de las cartas y color de texto-->
+              <p class="card-text"><!--agregar texto-->
+                El Ceviche de pescado peruano es el plato tradicional por
+                excelencia en el Perú. Los peruanos lo consideramos nuestro
+                plato bandera y nos sentimos especialmente orgullosos de él. ¡Y
+                aquí tienes nuestra receta!
+              </p>
+             <!--boton ,color de bootstrap y link donde se encuetra la receta--> <a
+                class="btn btn-danger"
+                href="https://comidasperuanas.net/ceviche-peruano-pescado/"
+                >Ver Receta</a
+              >
+            </div>
+          </div>
+        </div><!--CIERRE DEL SEGUNDO CARDS-->
+        <!--TERCER CARDS-->
+        <div class="col-lg-3 col-md-6 col-sm text-center">
+          <div class="card mb-3"><!--margin abajo camntidad 3-->
+            <!--tercera imagen de cards,(card-img-top)coloca una imagen en la parte superior de la tarjeta.-->
+            <img
+              src="https://comidasperuanas.net/wp-content/uploads/2015/08/Lomo-Saltado-340x225.webp"
+              class="card-img-top"
+              alt="Lomo Saltado"
+            />
+            <div class="card-body"><!--sección acolchada dentro de una tarjeta.-->
+              <h5 class="card-title text-danger">Lomo Saltado</h5><!--(title)títulos de las cartas y color de texto-->
+              <p class="card-text"><!--agregar texto-->
+                El Lomo Saltado está sin duda entre los principales y más
+                solicitados platos de la gastronomía peruana y ocupa un lugar
+                especial en la interminable lista de potajes que nacen gracias a
+                la fusión de la cocina peruana con otras cocinas del mundo, en
+                este caso, la cocina oriental china. ¡Vamos a cocinar!
+              </p>
+              <!--boton ,color de bootstrap y link donde se encuetra la receta--><a
+                class="btn btn-danger"
+                href="https://comidasperuanas.net/aji-de-gallina/"
+                >Ver Receta</a
+              >
+            </div>
+          </div>
+        </div><!--cierer del tercer cards-->
+        <div class="col-lg-3 col-md-6 col-sm text-center">
+          <div class="card mb-3">
+            <img
+              src="https://comidasperuanas.net/wp-content/uploads/2015/12/Aji-de-gallina-340x225.webp"
+              class="card-img-top"
+              alt="Ají de Gallina"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-danger">Ají de Gallina</h5>
+              <p class="card-text">
+                El Ají de Gallina es uno de los platos más populares en el Perú
+                que encanta a la mayoría de los paladares y además es un plato
+                de fácil preparación, que lleva entre sus principales
+                ingredientes nuestro preciado Ají Amarillo. ¡A comer!
+              </p>
+              <a
+                class="btn btn-danger"
+                href="https://comidasperuanas.net/aji-de-gallina/"
+                >Ver Receta</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!--cierer del tercer cards-->
+    <footer class="text-center bg-navbar-red text-light p-3">
+      Crack The Code 2021.-
+    </footer>
+<!--Aplicando 1-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
