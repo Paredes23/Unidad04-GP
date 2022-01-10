@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- CDN Css Personalizado -->
+    <link rel="stylesheet" href="assets/css/estilos.css" />
+    <title>Firebase Login Demo</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Firebase Demo</a>
+        <div class="d-flex">
+          <button id="logout" class="btn btn-outline-success">Salir</button>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5">
+
+      <div id="login" class="card text-center mb-5 mx-auto" style="max-width: 800px;">
+        <div class="card-header">
+          <h1 class="display-3 mb-3">Login</h1>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <button id="btnIngresoEmail" class="btn btn-primary"> Ingresar con email</button>
+              <form id="IngresoEmail" class="row g-3 ">
+                <h5>Ingreso de Usuario</h5>
+                <div class="col-12">
+                  <label for="ingresoEmail" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="ingresoEmail"
+                    placeholder="name@domain.com"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="ingresoPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="ingresoPassword" />
+                </div>
+                <div class="col-12">
+                  <button id="btnIngresoConEmail" type="submit" class="btn btn-primary">
+                    Ingresar
+                  </button>
+                  <button id="btnVolver"  class="btn btn-danger">
+                    Volver
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <button id="btnIngresoGmail" class="btn btn-primary"> Ingresar con Gmail</button>
+            </div>
+            <div class="col mt-5">
+              <p>
+                Si no estas registrado, favor registrese
+                <button id="btnRegistro" class="btn btn-primary">aquí</button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card text-center registro-usuario mx-auto" style="max-width: 600px;">
+        <div class="card-body">
+          <form id="registroUsuario" class="row g-3 ">
+            <h5>Registro de Usuario</h5>
+            <div class="col-md-6">
+              <label for="registroEmail" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="registroEmail"
+                placeholder="name@domain.com"
+              />
+            </div>
+            <div class="col-md-6">
+              <label for="registroPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="registroPassword" />
+            </div>
+            <div class="col-12">
+              <button id="btnRegistrar" type="submit" class="btn btn-primary">
+                Registrar
+              </button>
+              <button id="btnVolverRegistro" class="btn btn-danger">Volver</button>
+            </div>
+          </form>
+        </div>
+        
+      </div>
+
+      <div class="card mx-auto" id="contenidoWeb" style="max-width: 800px;">
+        <link rel="stylesheet" href="tarea1.css">
+        <mark><center><title></title></center></mark>
+       </head>
+         
+       <body>
+           <center><h1>Trivia Tech-Biblia</h1></center>
+       <div style="background-color: blueviolet; color:black">
+           <!--se crea un formulario-->
+           <center>
+           <form id = "trivia" name = "trivia">
+       
+             <!--primera pregunta-->
+             <div style="background-color: rgb(216, 129, 129); color: black;">
+         <p>1. ¿Cuál era el instrumento musical que tocaba David?</p>
+         <input id = "textbox"  type = "text" name = "question1">
+         <center><img src="https://thumbs.dreamstime.com/b/instrumentos-music…ol%C3%ADn-arpa-ilustraci%C3%B3n-set-161860680.jpg" width=300px; height=200px;></center>
+         </div>
+       
+         <!--segunda pregunta-->
+         <div style="background-color: cadetblue; color: black;">
+           <br>
+         <p>2. Sara, la esposa de Abraham, tuvo un hijo a los...</p>
+         <input type="radio" id = "mc" name="question2" value="25 años">25 años<br>
+         <input type="radio" id = "mc" name="question2" value="40 años">40 años<br>
+         <input type="radio" id = "mc" name="question2" value="90 años">90 años<br>
+         <center><img src="https://i.pinimg.com/originals/d9/e3/9c/d9e39cb2756234e289d1a8886dd698d4.gif" width="300px"  height="200px";></center><br>
+         </div>
+       
+         <!---3ra pregunta-->
+         <div style="background-color: rgb(143, 123, 161); color: black;">
+         <p>3. ¿Dónde pusieron a Jesús cuando nació?</p>
+         <input type="radio" id = "mc"  name="question3" value="En una cama">En una cama<br>
+         <input type="radio" id = "mc"  name="question3" value="En un pesebre">En un pesebre<br>
+         <input type="radio" id = "mc"  name="question3" value="En un trono">En un trono<br>
+         <center><img src="https://reygif.com/media/5/nacimiento-60469.gif" width="300px"  height="200px";></center>
+         </div>
+       
+         <!--4ta pregunta-->
+         <div style="background-color: rgb(226, 169, 148); color:black">
+         <p>4. ¿Con cuál semilla comparó Jesús al reino de Dios?</p>
+         <input type="radio" id = "mc" name="question4" value="Con el grano de mostaza ">Con el grano de mostaza <br>
+         <input type="radio" id = "mc" name="question4" value="Con el grano de maíz">Con el grano de maíz<br>
+         <input type="radio" id = "mc" name="question4" value="Con la semilla de la uva">Con la semilla de la uva<br>
+        <center> <img src="https://assetsnffrgf-a.akamaihd.net/assets/m/1102014646/univ/art/1102014646_univ_cnt_2_xl.jpg" width="300px"  height="200px" ;></center>
+         </div>
+       
+         <!--5ta pregunta-->
+         <div style="background-color: rgb(138, 182, 95); color: black;">
+         <p>5. ¿Qué pensaba la mujer con el flujo de sangre que tocó el manto de Jesús?</p>
+         <input type="radio" id = "mc" name="question5" value="«Si al menos logro tocar su manto, quedaré sana»">«Si al menos logro tocar su manto, quedaré sana»<br>
+         <input type="radio" id = "mc" name="question5" value="«Tengo que llamar la atención de Jesús para quedar sana»">«Tengo que llamar la atención de Jesús para quedar sana»<br>
+         <input type="radio" id = "mc" name="question5" value="«Tengo que interrumpir el camino del Señor»">«Tengo que interrumpir el camino del Señor»<br>
+        <center><img src="https://i.pinimg.com/originals/7d/af/d2/7dafd2668ae7d1815d73046abc4cf825.gif" width="300px"  height="200px";></center>
+         </div>
+       
+         <!--6ta pregunta-->
+         <div style="background-color: rgb(160, 126, 102); color:black">
+         <p>6. ¿A quién lanzaron al foso de los leones?</p>
+         <input type="radio" id = "mc" name="question6" value="Pablo"> Pablo<br>
+         <input type="radio" id = "mc" name="question6" value="José">José<br>
+         <input type="radio" id = "mc" name="question6" value="Daniel">Daniel<br>
+         <center><img src="	https://3.bp.blogspot.com/-VlS9AiYR3h4/VlZNZCsx5QI/AAAAAAAAFqE/9FXUfFUJzME/s1600/daniel_leones.jpg" width="300px"  height="200px";></center> 
+         </div>
+         
+       
+         <!--7ma pregunta-->
+         <div style="background-color: palevioletred; color: black;">
+         <p>7. ¿Cuántas fueron las plagas que Dios envió a Egipto?</p>
+         <input type="radio" id = "mc" name="question7" value="7 plagas">7 plagas<br>
+         <input type="radio" id = "mc" name="question7" value="10 plagas">10 plagas<br>
+         <input type="radio" id = "mc" name="question7" value="3 plagas">3 plagas<br>
+        <center><img src="	https://oneyearbibleimages.com/hail_plague.gif" width="300px"  height="200px";></center>
+         </div>
+        
+       
+         <!-- 8va pregunta-->
+         <div style="background-color:rgb(176, 195, 218); color:black">
+         <p>8. ¿A quiénes se conoce como los Patriarcas de la Biblia?</p>
+         <input type="radio" id = "mc" name="question8" value="Jesús, María y José">Jesús, María y José<br>
+         <input type="radio" id = "mc" name="question8" value="Pedro, Juan y Santiago">Pedro, Juan y Santiago<br>
+         <input type="radio" id = "mc" name="question8" value="Abraham, Isaac y Jacob">Abraham, Isaac y Jacob<br>
+         <center><img src="https://i.pinimg.com/originals/aa/a3/88/aaa388a8e3ead0aa236883bc12773775.gif" width="300px"  height="200px";></center>
+         </div>
+         
+       
+         
+       
+       <!--boton de evento-->
+         <input id ="button" type="button" value="¡Termine!" onclick="check();">
+       
+         <div id = "after_sumibt">
+           <p id = "messages"></p>
+           <p id = "number_correct"></p>
+           <img id ="pictures" width="300px" height="200px">
+         </div>
+       </div>
+       </center>
+       </form>
+         
+       <script src="tarea1.js"></script>
+         </body> 
+
+
+
+
+        
+    </div>
+    <!-- CDN Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CDN jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Se agrega el CDN de Firebase, agregar los demas CDN (jquery y bootstrap)-->
+    <!-- CDN Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <!-- CDN Authentication Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <!-- js personalizado -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
